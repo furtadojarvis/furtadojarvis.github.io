@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis — assistente pessoal</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --bg:#fdfdfc; --muted:#6b6b6b; --line:#e2e2df; --accent:#7a5cff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e8e8e6; --bg:#131314; --muted:#9a9a97; --line:#2c2c2e; --accent:#a48cff; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:4rem 1rem 6rem; }
+  h1 { font-size:2rem; line-height:1.2; margin:0 0 .4rem; letter-spacing:-.02em; }
+  .sub { color:var(--muted); margin:0 0 2.5rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .6rem; letter-spacing:-.01em; }
+  p { margin:0 0 1rem; }
+  ul { margin:0 0 1rem; padding-left:1.2rem; }
+  li { margin:.3rem 0; }
+  a { color:var(--accent); }
+  footer { margin-top:3.5rem; padding-top:1.5rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Jarvis</h1>
+  <p class="sub">Assistente pessoal auto-hospedado, de uso privado.</p>
+
+  <p>Jarvis é um assistente pessoal que roda em servidor próprio e é operado
+  por mensagens. Ele organiza tarefas, anotações e compromissos de uma única
+  pessoa: o próprio dono da instalação.</p>
+
+  <h2>O que ele faz com o Google Calendar</h2>
+  <p>Mediante autorização explícita do titular da conta, o Jarvis lê e
+  administra os eventos da agenda dele:</p>
+  <ul>
+    <li>consultar compromissos futuros;</li>
+    <li>criar novos eventos;</li>
+    <li>alterar e remover eventos existentes.</li>
+  </ul>
+  <p>O único escopo solicitado é
+  <code>https://www.googleapis.com/auth/calendar.events</code>. Nenhum outro
+  serviço do Google é acessado.</p>
+
+  <h2>Quem usa</h2>
+  <p>Instalação de uso pessoal, com um único usuário autorizado. Não é um
+  produto, não é oferecido a terceiros e não possui cadastro público.</p>
+
+  <footer>
+    <a href="./privacy.html">Política de privacidade</a>
+  </footer>
+</main>
+</body>
+</html>
